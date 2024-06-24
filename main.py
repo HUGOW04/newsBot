@@ -8,7 +8,7 @@ import pytz
 
 interests = {'bitcoin'}
 
-DISCORD_WEBHOOK_URL = 'YOUR_DISCORD_WEBHOOK_URL'  # Replace with your Discord webhook URL
+DISCORD_WEBHOOK_URL = ''  # Replace with your Discord webhook URL
 SWEDISH_TIMEZONE = pytz.timezone('Europe/Stockholm')
 
 def send_to_discord(message):
@@ -31,11 +31,8 @@ def get_yahoo_news_headlines(interest):
         soup = BeautifulSoup(response.text, 'html.parser')
         for news_item in soup.find_all('div', class_='NewsArticle'):
             title = news_item.find('h4').text
-            time = news_item.find('span', class_='fc-2nd').text
-            # Clean time text
-            time = time.replace('·', '').strip()
             link = news_item.find('a')['href']  # Get the link to the news article
-            message = f"**Title:** {title}\n**Time:** {time}\n**Link:** {link}\n"
+            message = f"**Title:** {title}\n**Link:** <{link}>\n"
             send_to_discord(message)
     else:
         print(f"Failed to retrieve news for {interest} with status code {response.status_code}")
