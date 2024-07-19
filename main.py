@@ -39,7 +39,8 @@ def get_yahoo_news_headlines(interest):
 
 def fetch_and_send_news():
     for interest in interests:
-        print(f"\nFetching news for {interest}:\n")
+        # Send fetching news message to Discord
+        send_to_discord(f"Fetching news for {interest}:\n")
         get_yahoo_news_headlines(interest)
 
 # Schedule the job to run once a day at 12:00 PM Swedish time
