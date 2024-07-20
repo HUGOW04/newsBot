@@ -6,9 +6,17 @@ import time
 from datetime import datetime
 import pytz
 
-interests = {'bitcoin'}
+interests = { 
+    'ai',
+    'information technology security',
+    'interest rate',
+    'house mortgage',
+    'rate cuts',
+    'inflation',
+    'bitcoin'
+}
 
-DISCORD_WEBHOOK_URL = 'YOUR_DISCORD_WEBHOOK_URL'  # Replace with your Discord webhook URL
+DISCORD_WEBHOOK_URL = ''  # Replace with your Discord webhook URL
 SWEDISH_TIMEZONE = pytz.timezone('Europe/Stockholm')
 
 def send_to_discord(message):
