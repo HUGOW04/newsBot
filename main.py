@@ -16,7 +16,7 @@ interests = {
     'bitcoin'
 }
 
-DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1264251394290880695/QGimhUddXhMQRg-6PHUWuD8tVHBP0O-ypGcfIGDk0yu9UX4fbkh_NdE2iKE5uNlg4330'  # Replace with your Discord webhook URL
+DISCORD_WEBHOOK_URL = ''  # Replace with your Discord webhook URL
 SWEDISH_TIMEZONE = pytz.timezone('Europe/Stockholm')
 
 def send_to_discord(message):
