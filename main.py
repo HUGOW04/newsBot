@@ -8,10 +8,7 @@ from bs4 import BeautifulSoup
 
 # Define your interests here
 interests = { 
-    'ai',
-    'information technology security',
     'interest rate',
-    'house mortgage',
     'rate cuts',
     'inflation',
     'bitcoin'
