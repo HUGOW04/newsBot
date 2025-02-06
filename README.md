@@ -2,7 +2,6 @@
 
 NewsBot is a simple Python script that fetches daily news headlines based on your interests and sends them to a Discord channel via a webhook. The bot runs automatically every day at 12:00 PM Swedish time.
 
-![news](https://github.com/user-attachments/assets/89bf100e-8b6e-4fda-88e8-fcf32e16a187)
 
 ## Features
 - Fetches news headlines from Yahoo News.
@@ -42,15 +41,7 @@ NewsBot is a simple Python script that fetches daily news headlines based on you
 - Runs every day at 12:00 PM Swedish time.
 
 ## Example Discord Output
-```
-**News for Bitcoin:**
-Title: Bitcoin hits new highs
-Link: <https://example.com>
-
-**News for Inflation:**
-Title: Inflation rates continue to rise
-Link: <https://example.com>
-```
+![news](https://github.com/user-attachments/assets/89bf100e-8b6e-4fda-88e8-fcf32e16a187)
 
 ## Notes
 - Ensure you have a working internet connection.
